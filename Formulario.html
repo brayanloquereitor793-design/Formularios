@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="Formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+</head>
+<body>
+
+    <h1>Formularios en HTML</h1>
+
+   <form action="" class=".rotate-hor-center" >
+
+    <label for="">Nombre Completo</label>
+    <input type="text" name="nombre" id="" size="30" placeholder="Empieza por tu apellido paterno" required>
+    <br><br>
+    <label for="">Matricula</label>
+    <input type="text" name="nombre" id="" size="30" placeholder="">
+    <br><br>
+
+<label for="">Edad</label>
+<input type="number" name="" id="">
+<br><br>
+
+    <label for="celular" >Numero de celular</label>
+    <input type="tel" name="" id="" pattern="[0-9] {10 }" placeholder="10 digitos" required>
+    <br><br>
+    <label for="" >Correo electronico</label>
+    <input type="email" name="" id="">
+    <br><br>
+    <label for="">Contraseña</label>
+    <input type="password" name="" id="">
+<br><br>
+
+    <fieldset>
+
+        <legend>Elige tu horario</legend>
+        <label for="">Matutino
+            <input type="radio" name="turno" id="">
+        </label>
+
+         <label for="">Vespertino
+            <input type="radio" name="turno" id="">
+        </label>
+
+         <label for="">Mixto
+            <input type="radio" name="turno" id="">
+        </label>
+
+    </fieldset>
+    <br><br>
+
+    <fieldset>
+<legend>Elige los cursos que te interesan:</legend>
+
+   <label for="">Robotica
+    <input type="checkbox" name="" id="">
+   </label>
+<br>
+   <label for="">Nutricion
+    <input type="checkbox" name="" id="">
+   </label>
+<br>
+   <label for="">Modelacion Matematica
+    <input type="checkbox" name="" id="">
+   </label>
+<br>
+   <label for="">Inteligencia Artificial
+    <input type="checkbox" name="" id="">
+   </label>
+    </fieldset>
+    <br>
+
+    <label for="">Quejas o Sugerencias</label>
+    <br>
+    <textarea rows="5" cols="80" name="" id="" placeholder="Escribe aqui tu queja o sugerencia"></textarea>
+    <br><br>
+
+    <label for="">Asesoria o Tutoria</label>
+    <input type="datetime-local" name="" id="">
+
+
+   <label for="">Acepto los terminos y condiciones</label>
+   <input type="checkbox" name="" id="" required>
+
+<div class="botones">
+<input class="boton" type="submit" value="Enviar">
+<input class="boton" type="reset" value="Limpiar">
+</div>
+
+</form>
+    
+</body>
+</html>

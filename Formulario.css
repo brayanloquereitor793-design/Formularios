@@ -1,0 +1,66 @@
+body{background-color: rgb(231, 164, 75);
+color: rgb(0, 0, 0);
+background-image: linear-gradient(orange, yellow, green);}
+
+h1{text-align: center;
+    letter-spacing: 4px;
+    font-family: fantasy;
+    animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 5s; /* don't forget to set a duration! */
+    
+}
+
+
+
+form
+{display: flex;
+flex-direction: column;
+width: 50%;
+margin: 0 auto; /*Centra el form*/
+gap: 10px;/*Espacio entre elementos*/
+box-shadow: 0 0 10px rgb(122, 26, 98);
+background-image: linear-gradient(rgb(231, 166, 26));
+animation-name: rotate-hor-center;
+animation-duration: 2s;
+animation-delay: 2s;
+animation-iteration-count: 2;
+}
+
+.botones{text-align: center;}
+
+.boton{
+background-color: rgb(253, 252, 252);
+color: rgb(102, 65, 6);
+padding: 10px;
+width: 111px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bolder;
+}
+
+.rotate-hor-center {
+	-webkit-animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+
+@-webkit-keyframes rotate-hor-center {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+            transform: rotateX(-360deg);
+  }
+}
+@keyframes rotate-hor-center {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+            transform: rotateX(-360deg);
+  }
+}
+
